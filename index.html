@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Age calculator app</title>
+
+  </head>
+
+  <body>
+
+    <main>
+      <form class="age-input">
+
+        <div class="input-group">
+          <label for="day">DAY</label>
+          <input type="number" id="day" class="inputComponent" placeholder="DD" min="1" max="31">
+          <p class="errorMessage"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="month">MONTH</label>
+          <input type="number" id="month" class="inputComponent" placeholder="MM" min="1" max="12">
+          <p class="errorMessage"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="year">YEAR</label>
+          <input type="number" id="year" class="inputComponent" placeholder="YYYY" min="1583" max="">
+          <p class="errorMessage"></p>
+        </div>
+
+      </form>
+
+      <section class="buttonContainer">
+
+        <div class="line"></div>
+
+        <button class="calculate-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg>
+        </button>
+
+      </section>
+      
+      <section class="age-output">
+
+        <div class="userNumberOfYearsContainer">
+          <p class="yearsHolder">--</p>
+          <p>years</p>
+        </div>
+
+        <div class="userNumberofMonthsContainer">
+          <p class="monthsHolder">--</p>
+          <p>months</p>
+        </div>
+
+        <div class="userNumberOfDaysContainer">
+          <p class="daysHolder">--</p>
+          <p>days</p>
+        </div>
+      </section>
+
+    </main>
+
+    
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
