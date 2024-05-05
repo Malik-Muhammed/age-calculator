@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 [solution URL](https://github.com/Malik-Muhammed/age-calculator)
-[live site URL](https://your-live-site-url.com)
+[live site URL](https://malik-muhammed.github.io/age-calculator/)
 
 ## My process
 

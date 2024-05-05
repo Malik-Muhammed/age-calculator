@@ -135,6 +135,12 @@ main {
   flex-direction: column;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .input-group > label {
   color: var(--smokeyGrey);
   font-weight: var(--fw-700);
@@ -150,6 +156,10 @@ main {
 
 .input-group > label + input:hover {
   border: 1px solid var(--Purple);
+}
+
+.input-group > label + input:focus {
+  outline: none;
 }
 
 .input-group > label + input:placeholder-shown {
@@ -185,7 +195,7 @@ main {
   transition: all 0.3s ease-in-out; /* Add transition */
 }
 
-button {
+#btn {
   background-color: var(--Purple);
   border: none;
   border-radius: 50%;
@@ -199,15 +209,15 @@ button {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+#btn:hover {
   background-color: var(--offBlack);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button svg {
+#btn svg {
   width: 40px;
   height: 40px;
 }
@@ -256,7 +266,7 @@ button svg {
     display: block;
   }
 
-  button {
+  #btn {
     width: 70px;
     height: 70px;
     left: auto;

@@ -171,6 +171,16 @@ calculateBtn.addEventListener("click", () => {
                 displayErrorMessage(i, `Must be a valid ${dateKeywords[i]}`, false);
                 isInputValid = false;
             }
+
+            else if ((Number(inputComponent[i].value))
+                            >
+                     (dateConstant[i])) {
+                //Check if the entered is greater than the maximum possible 
+                // number of days in a month.
+                displayErrorMessage(i, `Must be a valid ${dateKeywords[i]}`, false);
+                isInputValid = false;
+                
+            }
             
             else {
                  
